@@ -8,6 +8,12 @@ public class MenuSecundario : MonoBehaviour
     [SerializeField] private GameObject menuReportar;
 
     private bool _menuActivo = false;
+   
+    [SerializeField] GameObject BotonRiesgoFisico;
+    [SerializeField] GameObject BotonRiesgoErgonomico;
+    [SerializeField] GameObject BotonReportar;
+
+    
     
 
     // Start is called before the first frame update
@@ -22,17 +28,14 @@ public class MenuSecundario : MonoBehaviour
         if (Instance.RightTrigger > 0 && _menuActivo == false)
         {
             menuReportar.gameObject.SetActive(true);
+            
+            BotonReportar.gameObject.SetActive(true);
+            BotonRiesgoErgonomico.gameObject.SetActive(false);
+            BotonRiesgoFisico.gameObject.SetActive(false);
+            
             _menuActivo = true;
-        } 
-               
-        /*if (Instance.RightTriggerUp && _menuActivo  == true)
-        {
-            menuReportar.gameObject.SetActive(false);
-            _menuActivo = false;
         }
-    
-        Debug.Log("Menu Activo: " + _menuActivo);*/
-       
 
     }
+
 }

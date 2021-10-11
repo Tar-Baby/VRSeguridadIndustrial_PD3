@@ -6,7 +6,7 @@ public class RespuestaCorrecta : MonoBehaviour
 {
     private int puntuaciónTotal = 0;
     string a = "respuesta";
-    //Script para comprobar si una respuesta correcta
+    //Script para comprobar si una respuesta es correcta
     
     // Start is called before the first frame update
     void Start()

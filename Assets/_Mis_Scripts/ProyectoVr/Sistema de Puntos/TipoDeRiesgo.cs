@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class TipoDeRiesgo : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private bool Submenu = false;
+
+
+
+
+        // Start is called before the first frame update
     void Start()
     {
         
@@ -13,6 +18,11 @@ public class TipoDeRiesgo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        AbrirSubmenus();
+    }
+
+    public void AbrirSubmenus()
+    {
+
     }
 }
